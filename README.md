@@ -1,47 +1,111 @@
-# MosquitoNet
+<img width="1280" height="640" alt="git (1)" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
 
-MosquitoNet is a humorous, public-health-style mosquito intelligence dashboard. It lets a community scan rooms for a deterministic pseudo-estimate, report catches, explore privacy-safe hotspots, compare hunters, and review personal impact.
 
-> MosquitoNet is an experimental/humorous project and should not be used for real mosquito population surveillance or public-health decisions.
 
-## MVP stack
+# MosquitoNet 🎯
 
-- Next.js / Vinext + TypeScript
-- Tailwind CSS and Lucide icons
-- Recharts for personal analytics
-- Supabase-ready PostgreSQL schema, RLS policies, and storage fields
-- Local seed data and UI fallback so the demo runs without external keys
 
-## Run locally
+## Basic Details
+### Team Name: PaperNotWeight
 
+
+### Team Members
+- Team Lead: KAASINAATHAN MP
+- Member 2: EMMANUEL THOMMAS
+
+### Project Description
+MosquitoNet is a humorous, public-health-style bio-acoustic mosquito intelligence network and room density scanner. It monitors simulated wingbeat frequencies across Kerala districts, estimates room mosquito capacity with deterministic pseudo-physics, tracks electric bat kill streaks, and aggregates community catch reports into privacy-safe hotspot maps.
+
+### The Problem (that doesn't exist)
+Mosquitoes are conducting covert, unsanctioned airborne sorties in our bedrooms, tactically exploiting ceiling fan blind spots, dodging electric rackets with superhuman evasive maneuvers, and operating with zero accountability while humans blindly swing into the darkness.
+
+### The Solution (that nobody asked for)
+A hyper-engineered bio-acoustic defense grid with tactical Kerala radar tracking, a SHA-256 room scanner that models ceiling fan hostility and blood-source accessibility, an offline-first electric bat kill ledger, and a competitive hunter leaderboard with Mosquito Density Index (MDI) analytics.
+
+## Technical Details
+### Technologies/Components Used
+For Software:
+- Languages: TypeScript, JavaScript, HTML5, CSS3
+- Frameworks: Next.js 16 (App Router), React 19, Tailwind CSS v4
+- Libraries: Lucide React, Recharts, Radix UI, Drizzle ORM
+- Tools: Vite, Turbopack, Git, GitHub Actions, GitHub Pages
+
+For Hardware:
+- Main Components: High-Voltage Electric Mosquito Racket (3000V grid), Bio-Acoustic Piezoelectric Wingbeat Transducer, ESP32 Microcontroller Node, 0.96" OLED Diagnostic Display
+- Specifications: 480Hz – 620Hz acoustic frequency bandpass, 3.7V 18650 Li-ion battery, sub-millisecond spark discharge capacitor
+- Tools Required: Soldering iron, Wire strippers, Digital Multimeter, 3D Printer for tactical node enclosure
+
+### Implementation
+For Software:
+# Installation
 ```bash
 npm install
+```
+
+# Run
+```bash
 npm run dev
 ```
 
-Open `http://localhost:5173`. The main routes are `/`, `/scanner`, `/report`, `/map`, `/leaderboard`, and `/dashboard`.
+> **Live Deployment**: Hosted on GitHub Pages at [https://njanorupavam.github.io/papernotweight/](https://njanorupavam.github.io/papernotweight/)
 
-## Supabase setup
+### Project Documentation
+For Software:
 
-1. Create a Supabase project.
-2. Run `supabase/migrations/001_mosquitonet.sql` in the SQL editor.
-3. Create a storage bucket for proof images and room scans.
-4. Run `supabase/seed.sql` after at least one auth user exists. It uses the first auth user as the seed owner and does nothing when no user exists.
-5. Add the project URL and anon key to the runtime environment when wiring the real client.
+# Screenshots (Add at least 3)
+![Bio-Acoustic Tactical Radar](docs/screenshots/radar_monitor.png)
+*Kerala Bio-Acoustic Radar Monitor tracking real-time district node status, acoustic telemetry, and live threat levels*
 
-The current MVP intentionally uses local mock data for a zero-config demo. The SQL schema is ready for email/password auth, user-owned catches, room scans, and aggregated map queries.
+![Room Mosquito Capacity Scanner](docs/screenshots/room_scanner.png)
+*Deterministic Room Scanner estimating mosquito capacity, occupancy risk, and ceiling fan hostility from uploaded photos*
 
-## Privacy model
+![Field Catch Reporting System](docs/screenshots/catch_report.png)
+*Community intake portal for logging electric bat catches with proof attachments and neighborhood-level privacy masking*
 
-Exact coordinates may be stored privately for a signed-in user, but public map data must use `getPublicCoordinates()` and aggregated grid cells. The `public_catch_cells` view never returns exact latitude/longitude or individual reports.
+![Privacy-Filtered Hotspot Map](docs/screenshots/global_map.png)
+*Global and regional hotspot map with MDI scores, activity trends, and aggregated cell data*
 
-## Room scanner model
+![Community Hunter Leaderboard](docs/screenshots/leaderboard.png)
+*Live community rankings tracking top mosquito hunters, verified catches, and hunter titles*
 
-`lib/mosquito-calculator.ts` hashes stable file bytes, dimensions, and file metadata into a seeded pseudo-random stream. The same photo produces the same capacity, occupancy, suitability score, risk level, and sub-metrics without calling an ML service.
+# Diagrams
+![Architecture & Workflow Diagram](docs/workflow.svg)
+*MosquitoNet End-to-End Architecture: Sensor intake, pseudo-physics inference engine, local state sync, and tactical UI presentation*
 
-## Future ideas
+For Hardware:
 
-- Connect Supabase auth and storage.
-- Replace the SVG demo map with MapLibre and server-side cell aggregation.
-- Add weather/rainfall context and time-series exports.
-- Add moderation, report verification, and regional mosquito species tagging.
+# Schematic & Circuit
+![Circuit](docs/workflow.svg)
+*Tactical Bio-Acoustic Interceptor Circuit: Transducer input, frequency discriminator stage, ESP32 telemetry, and high-voltage grid trigger*
+
+![Schematic](docs/workflow.svg)
+*Schematic diagram for ESP32 bio-acoustic listening node and OLED status readout*
+
+# Build Photos
+![Components](docs/screenshots/overview.png)
+*Tactical Surveillance Node components and Kerala district radar telemetry deck*
+
+![Build](docs/screenshots/radar_monitor.png)
+*Calibrating bio-acoustic wingbeat signal discriminator across frequency bands*
+
+![Final](docs/screenshots/dashboard.png)
+*Final MosquitoNet operational command deck and personal impact analytics*
+
+### Project Demo
+# Video
+[Live Web Application Link](https://njanorupavam.github.io/papernotweight/)
+*Interactive Next.js Web App demonstrating Kerala live bio-acoustic radar, room scanner, field catch logger, and hunter leaderboard*
+
+# Additional Demos
+- [GitHub Repository](https://github.com/njanorupavam/papernotweight/)
+- [GitHub Pages Live App](https://njanorupavam.github.io/papernotweight/)
+
+## Team Contributions
+- KAASINAATHAN MP: Bio-acoustic surveillance grid architecture, deterministic room scanner pseudo-physics algorithms, Kerala GeoJSON tactical radar integration, and GitHub Actions CI/CD deployment pipeline.
+- EMMANUEL THOMMAS: Tactical cyberpunk UI design, privacy-first community reporting intake, Recharts field impact analytics dashboard, and hunter leaderboard ranking system.
+
+---
+Made with ❤️ at TinkerHub Useless Projects 
+
+![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
+![Static Badge](https://img.shields.io/badge/UselessProjects--26-26?link=https%3A%2F%2Ftinkerhub.org%2Fevents%2F1M8ORET9A1%2Fuseless-projects-3.0)

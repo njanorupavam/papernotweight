@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" style="background: #090e0c; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141f1a"/>
+      <stop offset="100%" stop-color="#0c1411"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1ee29a"/>
+      <stop offset="100%" stop-color="#0fa56e"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#17241e" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" fill="#1ee29a" font-size="12" font-weight="700" letter-spacing="4" font-family="monospace">MOSQUITONET ARCHITECTURE &amp; DATA PIPELINE</text>
+  <text x="600" y="95" text-anchor="middle" fill="#f0f7f2" font-size="24" font-weight="800">Autonomous Bio-Acoustic Defense Grid</text>
+
+  <!-- Node 1: Sensor & Input Layer -->
+  <rect x="50" y="140" width="240" height="420" rx="12" fill="url(#cardGrad)" stroke="#22392e" stroke-width="1.5"/>
+  <rect x="50" y="140" width="240" height="45" rx="12" fill="#15261f"/>
+  <text x="170" y="168" text-anchor="middle" fill="#1ee29a" font-size="14" font-weight="700">1. Intake &amp; Sensor Layer</text>
+  
+  <rect x="70" y="205" width="200" height="65" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="85" y="230" fill="#e2ede5" font-size="13" font-weight="600">🎙️ Bio-Acoustic Feed</text>
+  <text x="85" y="252" fill="#7d9187" font-size="11">Real-time wingbeat audio (480-620Hz)</text>
+
+  <rect x="70" y="285" width="200" height="65" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="85" y="310" fill="#e2ede5" font-size="13" font-weight="600">📷 Room Image Scanner</text>
+  <text x="85" y="332" fill="#7d9187" font-size="11">Deterministic SHA-256 byte hashing</text>
+
+  <rect x="70" y="365" width="200" height="65" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="85" y="390" fill="#e2ede5" font-size="13" font-weight="600">⚡ Community Kill Reports</text>
+  <text x="85" y="412" fill="#7d9187" font-size="11">Electric bat &amp; racket strikes</text>
+
+  <rect x="70" y="445" width="200" height="65" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="85" y="470" fill="#e2ede5" font-size="13" font-weight="600">📍 GeoJSON District Nodes</text>
+  <text x="85" y="492" fill="#7d9187" font-size="11">14 Kerala tactical clusters</text>
+
+  <!-- Arrows 1 -> 2 -->
+  <path d="M 290 350 L 340 350" stroke="#1ee29a" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="340,350 332,345 332,355" fill="#1ee29a"/>
+
+  <!-- Node 2: Processing & Inference Engine -->
+  <rect x="350" y="140" width="250" height="420" rx="12" fill="url(#cardGrad)" stroke="#22392e" stroke-width="1.5"/>
+  <rect x="350" y="140" width="250" height="45" rx="12" fill="#15261f"/>
+  <text x="475" y="168" text-anchor="middle" fill="#1ee29a" font-size="14" font-weight="700">2. Processing Engine</text>
+
+  <rect x="370" y="205" width="210" height="75" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="385" y="230" fill="#e2ede5" font-size="13" font-weight="600">Species Classifier</text>
+  <text x="385" y="250" fill="#7d9187" font-size="11">Aedes vs Culex identification</text>
+  <text x="385" y="268" fill="#1ee29a" font-size="10" font-family="monospace">Confidence: 94.2% · Fast Fourier</text>
+
+  <rect x="370" y="295" width="210" height="75" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="385" y="320" fill="#e2ede5" font-size="13" font-weight="600">Hostility Pseudo-Physics</text>
+  <text x="385" y="340" fill="#7d9187" font-size="11">Ceiling fan RPM threat score</text>
+  <text x="385" y="358" fill="#1ee29a" font-size="10" font-family="monospace">Dark corners &amp; blood source</text>
+
+  <rect x="370" y="385" width="210" height="75" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="385" y="410" fill="#e2ede5" font-size="13" font-weight="600">Privacy Anonymizer</text>
+  <text x="385" y="430" fill="#7d9187" font-size="11">Spatial grid fuzzy aggregation</text>
+  <text x="385" y="448" fill="#1ee29a" font-size="10" font-family="monospace">Exact coordinates stripped</text>
+
+  <rect x="370" y="475" width="210" height="60" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="385" y="500" fill="#e2ede5" font-size="13" font-weight="600">MDI Index Calculator</text>
+  <text x="385" y="520" fill="#7d9187" font-size="11">Mosquito Density Index (0-100)</text>
+
+  <!-- Arrows 2 -> 3 -->
+  <path d="M 600 350 L 650 350" stroke="#1ee29a" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="650,350 642,345 642,355" fill="#1ee29a"/>
+
+  <!-- Node 3: State & Local Storage -->
+  <rect x="660" y="140" width="220" height="420" rx="12" fill="url(#cardGrad)" stroke="#22392e" stroke-width="1.5"/>
+  <rect x="660" y="140" width="220" height="45" rx="12" fill="#15261f"/>
+  <text x="770" y="168" text-anchor="middle" fill="#1ee29a" font-size="14" font-weight="700">3. Local &amp; Sync State</text>
+
+  <rect x="680" y="215" width="180" height="90" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="695" y="242" fill="#e2ede5" font-size="13" font-weight="600">IndexedDB / Local</text>
+  <text x="695" y="265" fill="#7d9187" font-size="11">Offline kill ledger</text>
+  <text x="695" y="285" fill="#7d9187" font-size="11">Zero-config browser runtime</text>
+
+  <rect x="680" y="325" width="180" height="90" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="695" y="352" fill="#e2ede5" font-size="13" font-weight="600">Supabase SQL Schema</text>
+  <text x="695" y="375" fill="#7d9187" font-size="11">PostgreSQL RLS Policies</text>
+  <text x="695" y="395" fill="#7d9187" font-size="11">Proof image storage bucket</text>
+
+  <rect x="680" y="435" width="180" height="90" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="695" y="462" fill="#e2ede5" font-size="13" font-weight="600">Web Audio Synth</text>
+  <text x="695" y="485" fill="#7d9187" font-size="11">Real-time tone generation</text>
+  <text x="695" y="505" fill="#7d9187" font-size="11">Frequency interceptor audio</text>
+
+  <!-- Arrows 3 -> 4 -->
+  <path d="M 880 350 L 930 350" stroke="#1ee29a" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <polygon points="930,350 922,345 922,355" fill="#1ee29a"/>
+
+  <!-- Node 4: Tactical UI Presentation -->
+  <rect x="940" y="140" width="210" height="420" rx="12" fill="url(#cardGrad)" stroke="#22392e" stroke-width="1.5"/>
+  <rect x="940" y="140" width="210" height="45" rx="12" fill="#15261f"/>
+  <text x="1045" y="168" text-anchor="middle" fill="#1ee29a" font-size="14" font-weight="700">4. Tactical UI Deck</text>
+
+  <rect x="955" y="205" width="180" height="55" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="965" y="230" fill="#e2ede5" font-size="12" font-weight="600">🛰️ Bio-Acoustic Radar</text>
+  <text x="965" y="248" fill="#7d9187" font-size="10">2D/3D state sensor grid</text>
+
+  <rect x="955" y="275" width="180" height="55" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="965" y="300" fill="#e2ede5" font-size="12" font-weight="600">🔬 Room Scanner Report</text>
+  <text x="965" y="318" fill="#7d9187" font-size="10">Capacity &amp; risk diagnostics</text>
+
+  <rect x="955" y="345" width="180" height="55" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="965" y="370" fill="#e2ede5" font-size="12" font-weight="600">🗺️ Privacy Hotspot Map</text>
+  <text x="965" y="388" fill="#7d9187" font-size="10">Aggregated cluster cells</text>
+
+  <rect x="955" y="415" width="180" height="55" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="965" y="440" fill="#e2ede5" font-size="12" font-weight="600">🏆 Hunter Leaderboard</text>
+  <text x="965" y="458" fill="#7d9187" font-size="10">Ranks, streaks, badges</text>
+
+  <rect x="955" y="485" width="180" height="55" rx="8" fill="#0d1814" stroke="#253f33" stroke-width="1"/>
+  <text x="965" y="510" fill="#e2ede5" font-size="12" font-weight="600">📊 Field Dashboard</text>
+  <text x="965" y="528" fill="#7d9187" font-size="10">Recharts impact analytics</text>
+
+  <!-- Footer Info -->
+  <text x="600" y="600" text-anchor="middle" fill="#586e63" font-size="11" font-family="monospace">Deployed via Next.js Static Export &amp; GitHub Actions to GitHub Pages</text>
+</svg>

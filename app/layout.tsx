@@ -2,11 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MosquitoNet — Global Mosquito Intelligence Network",
-  description: "Track. Catch. Report. Discover where mosquitoes are winning.",
-  other: {
-    "codex-preview": "development",
-  },
+  title: "MosquitoNet — Bio-Acoustic Recon & Live Surveillance",
+  description:
+    "Autonomous bio-acoustic surveillance & real-time vector activity tracking.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -19,8 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">{children}</body>
+    <html lang="en" className="dark">
+      <body className="antialiased bg-[#0c141e] text-[#dbe3f2] selection:bg-[#ff553e] selection:text-[#5b0300]">
+        {children}
+      </body>
     </html>
   );
 }
